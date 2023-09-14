@@ -1,0 +1,162 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap');
+/* css resets  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    background: hsl(0, 0%, 100%);
+    max-width: 1440px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container{
+    max-width: 720px;
+    height: 380px;
+    position: relative;
+    top: 150px;
+    left: 20%;
+    display: flex;
+    border-radius: 1em;
+}
+
+.result-board{
+    position: relative;
+    width: 360px;
+    background-image: linear-gradient( To bottom, hsl(252, 65%, 50%), hsl(241, 81%, 54%), hsl(241, 81%, 54%));
+    border-radius: 1em;
+    background-size: 50%;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    right: -8px;
+    z-index: 1;
+}
+
+.result-board-header{
+    font-size: 0.9em;
+    margin: 2em 0;
+}
+
+.score{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image:linear-gradient(to bottom,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    position: relative;
+    left: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+.paragraph{
+    font-size: 0.9em;
+    padding: 0.5em 3em;
+    max-width: 280px;
+    text-align: center;
+    margin-left: 46px;
+}
+
+.summary-board{
+    background:hsl(0, 0%, 100%);
+    width: 360px;
+    box-shadow: hsla(0, 5%, 4%, 0.566) 0px 5px 20px -5px;
+    position: relative;
+}
+
+.reaction{
+    display: flex;
+    height: 45px;
+    width: 80%;
+    padding: 1em;
+    font-weight: 600;
+    margin-left: 20px;
+    margin: 0.7em 2em;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.button a{
+    background: hsl(224, 30%, 27%);
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 1em 115px;
+    border-radius: 22px;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin: 1rem 30px;
+    position: relative;
+    top: 40px;
+}
+
+.button a:hover, 
+.button a:focus{
+    background-image: linear-gradient(to bottom,  hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
+}
+
+.bold{
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    left: 7em;
+}
+
+.grey{
+    position: relative;
+    color: grey;
+    left:7em;
+}
+
+
+.reaction + div{
+    padding: 4px 0.5em;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* css media queries */
+
+@media  screen and (max-width: 375px) {
+    .container{
+        display: grid;
+        max-width: 375px;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;}
+        
+    .result-board{
+       border-bottom-left-radius: 9%;
+       border-bottom-right-radius: 9%;
+       border-top-left-radius: 0;
+       border-top-right-radius: 0;
+       width: 100%;
+       position: relative;
+       right: 0;
+    }
+    
+    .score{
+        width: 100px;
+        height: 100px;
+        left: 140px;
+    }
+
+    .paragraph{
+        max-width: none;
+        margin-left: 30px;
+    }
+    .summary-board{
+        width: 100%;
+        box-shadow: none;
+    }
+}
