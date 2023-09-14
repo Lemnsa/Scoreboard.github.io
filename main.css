@@ -134,6 +134,10 @@ html, body{
         top: 0;
         left: 0;
         }
+    .result-board-header{
+        left: -12px;
+        position: relative;
+    }
         
     .result-board{
        border-bottom-left-radius: 9%;
@@ -147,10 +151,16 @@ html, body{
     }
     
     .score{
-        width: 120px;
-        height: 120px;
-        left: 129px;
+        width: 110px;
+        height: 110px;
+        left: 120px;
         font-size: 2em;
+    }
+    .of-100{
+        left:-13px;
+    }
+    .paragraph-header{
+        left: -13px;
     }
 
     .paragraph{
@@ -162,6 +172,9 @@ html, body{
     .summary-board{
         width: 100%;
         box-shadow: none;
+    }
+    .reaction{
+        width: 310px;
     }
     .button a{
         top: 10px;
