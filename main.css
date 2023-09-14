@@ -133,7 +133,7 @@ html, body{
         position: relative;
         top: 0;
         left: 0;
-        height: 100%;}
+        }
         
     .result-board{
        border-bottom-left-radius: 9%;
@@ -158,5 +158,9 @@ html, body{
     .summary-board{
         width: 100%;
         box-shadow: none;
+    }
+    .button a{
+        top: 10px;
+        bottom: 20px;
     }
 }
