@@ -143,6 +143,7 @@ html, body{
        width: 100%;
        position: relative;
        right: 0;
+        height:300px;
     }
     
     .score{
@@ -152,8 +153,10 @@ html, body{
     }
 
     .paragraph{
+        bottom: 20px;
         max-width: none;
-        margin-left: 30px;
+        margin-left: 0px;
+        
     }
     .summary-board{
         width: 100%;
@@ -165,6 +168,6 @@ html, body{
     }
     .attribution {
         position: relative;
-        top: -95px;
+        top: -75px;
     }
 }
