@@ -156,11 +156,15 @@ html, body{
         margin-left: 30px;
     }
     .summary-board{
-        width: 100%;
+        width: 375px;
         box-shadow: none;
     }
     .button a{
         top: 10px;
         bottom: 20px;
+    }
+    .attribution {
+        position:relative;
+        top: -95px;
     }
 }
