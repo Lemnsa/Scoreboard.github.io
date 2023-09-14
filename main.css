@@ -163,4 +163,8 @@ html, body{
         top: 10px;
         bottom: 20px;
     }
+    .attribution {
+        position: relative;
+        top: -95px;
+    }
 }
